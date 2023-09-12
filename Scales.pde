@@ -17,7 +17,6 @@ void scale(int x, int y) {
   beginShape();
 
   bezier(x-10,y-20,x+10,y + 10,x+50,y+10,2*x,2*y);
-   rect(x,y,40,20);
 
   endShape();
 }
