@@ -3,9 +3,22 @@ void setup() {
   noLoop(); //stops the draw() function from repeating
 }
 void draw() {
-  //your code here
+ for (int x = 0; x <2200;x+= 10){
+    for (int y = 0; y <2020; y+=20){
+      fill((int)(Math.random()*256), (int)(Math.random()*256),(int)(Math.random()*256));
+      scale(x,y);
+      
+     
+    }
+  }
+}
 }
 void scale(int x, int y) {
-  //your code here
+  beginShape();
+
+  bezier(x-10,y-20,x+10,y + 10,x+50,y+10,2*x,2*y);
+   rect(x,y,40,20);
+
+  endShape();
 }
 
